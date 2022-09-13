@@ -15,7 +15,7 @@ class LoginPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextFormField(
-              style: TextStyle(
+              style: const TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
                   fontFamily: "Montserrat"),
@@ -30,15 +30,15 @@ class LoginPage extends StatelessWidget {
                       const BorderSide(color: Colors.transparent, width: 0),
                 ),
                 contentPadding:
-                    EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
                 filled: true,
                 fillColor: Colors.white,
               ),
               controller: emailController,
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             TextFormField(
-              style: TextStyle(
+              style: const TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
                   fontFamily: "Montserrat"),
@@ -53,18 +53,18 @@ class LoginPage extends StatelessWidget {
                       const BorderSide(color: Colors.transparent, width: 0),
                 ),
                 contentPadding:
-                    EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
                 filled: true,
                 fillColor: Colors.white,
               ),
               controller: passwordController,
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             SizedBox(
               width: double.infinity,
               height: 50,
               child: ElevatedButton(
-                child: Text('Giriş Yap'),
+                child: const Text('Giriş Yap'),
                 onPressed: () {
                   alphaAuthApi.login(userId: 'userId', password: 'password');
                 },
