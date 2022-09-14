@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:swagger_exam/core/services/alpha_auth_api/alpha_auth_api.dart';
+import 'package:swagger_exam/pages/login_page/login_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -10,6 +12,19 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      appBar: AppBar(actions: [
+        IconButton(
+          icon: const Icon(Icons.logout_sharp),
+          onPressed: () {
+            logout().then((value) {
+              Navigator.pushNamedAndRemoveUntil(
+                  context, '/LoginPage', (route) => false);
+            });
+          },
+        )
+      ]),
+      body: Container(),
+    );
   }
 }
