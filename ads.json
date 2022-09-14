@@ -1,266 +1,60 @@
 {
     "data": [
         {
-            "MAL": "010123",
-            "MALADI": "NICHT KLASSIFIZIERTER WEIZEN",
-            "DIL": "4"
-        },
-        {
-            "MAL": "010114",
-            "MALADI": "ROTER BROTWEIZEN NIEDRIGER QUALITÄT (1670)",
-            "DIL": "4"
-        },
-        {
-            "MAL": "010114",
-            "MALADI": "ПШЕНИЦА ОБЫКНОВЕННАЯ КРАСНАЯ НИЗКОГО КАЧЕСТВА (1670)",
-            "DIL": "3"
+            "MAL": "010301",
+            "FIYAT": 1.434,
+            "AY": 1,
+            "YIL": 2020
         },
         {
             "MAL": "010301",
-            "MALADI": "ARPA",
-            "DIL": "1"
-        },
-        {
-            "MAL": "010111",
-            "MALADI": "SONSTIGER WEISSER WEIZEN (1360)",
-            "DIL": "4"
-        },
-        {
-            "MAL": "010311",
-            "MALADI": "UNCLASSIFIED BARLEY",
-            "DIL": "2"
-        },
-        {
-            "MAL": "050109",
-            "MALADI": "КАНОЛА",
-            "DIL": "3"
-        },
-        {
-            "MAL": "010114",
-            "MALADI": "LOW QUALITY RED BREAD WHEAT (1670)",
-            "DIL": "2"
-        },
-        {
-            "MAL": "010302",
-            "MALADI": "MISIR",
-            "DIL": "1"
-        },
-        {
-            "MAL": "050101",
-            "MALADI": "SONNENBLUMENKERN",
-            "DIL": "4"
-        },
-        {
-            "MAL": "010110",
-            "MALADI": "красная твердая пшеница",
-            "DIL": "3"
-        },
-        {
-            "MAL": "010113",
-            "MALADI": "LOW QUAL. WHITE BREAD WHEAT (1660)",
-            "DIL": "2"
-        },
-        {
-            "MAL": "050101",
-            "MALADI": "AYÇİÇEĞİ",
-            "DIL": "1"
-        },
-        {
-            "MAL": "010123",
-            "MALADI": "NONCLASSIFIED WHEAT",
-            "DIL": "2"
-        },
-        {
-            "MAL": "010113",
-            "MALADI": "DÜŞ.VAS.BYZ.EKMEKLİK BUĞDAY (1660)",
-            "DIL": "1"
-        },
-        {
-            "MAL": "010302",
-            "MALADI": "CORN",
-            "DIL": "2"
-        },
-        {
-            "MAL": "010109",
-            "MALADI": "белая твердая пшеница",
-            "DIL": "3"
+            "FIYAT": 1.35,
+            "AY": 2,
+            "YIL": 2020
         },
         {
             "MAL": "010301",
-            "MALADI": "GERSTE",
-            "DIL": "4"
-        },
-        {
-            "MAL": "010302",
-            "MALADI": "MAIS",
-            "DIL": "4"
-        },
-        {
-            "MAL": "050101",
-            "MALADI": "SUNFLOWER",
-            "DIL": "2"
-        },
-        {
-            "MAL": "050109",
-            "MALADI": "KANOLA",
-            "DIL": "1"
-        },
-        {
-            "MAL": "010123",
-            "MALADI": "НЕ СОРТОВАЯ ПШЕНИЦА",
-            "DIL": "3"
-        },
-        {
-            "MAL": "010111",
-            "MALADI": "БЕЛАЯ ПШЕНИЦА ПРОЧАЯ (1360) ",
-            "DIL": "3"
-        },
-        {
-            "MAL": "010123",
-            "MALADI": "SINIF DIŞI BUĞDAY",
-            "DIL": "1"
+            "FIYAT": 1.339,
+            "AY": 6,
+            "YIL": 2020
         },
         {
             "MAL": "010301",
-            "MALADI": "ЯЧМЕНЬ",
-            "DIL": "3"
-        },
-        {
-            "MAL": "010110",
-            "MALADI": "KIRMIZI SERT BUĞDAY (1270)",
-            "DIL": "1"
-        },
-        {
-            "MAL": "010109",
-            "MALADI": "WHITE BUCKWHEAT (1260)",
-            "DIL": "2"
-        },
-        {
-            "MAL": "010112",
-            "MALADI": "OTHER RED WHEAT (1370)",
-            "DIL": "2"
-        },
-        {
-            "MAL": "010112",
-            "MALADI": "DİĞER KIRMIZI BUĞDAY (1370)",
-            "DIL": "1"
-        },
-        {
-            "MAL": "010303",
-            "MALADI": "HAFER",
-            "DIL": "4"
-        },
-        {
-            "MAL": "010109",
-            "MALADI": "BEYAZ SERT BUĞDAY (1260)",
-            "DIL": "1"
+            "FIYAT": 1.38,
+            "AY": 7,
+            "YIL": 2020
         },
         {
             "MAL": "010301",
-            "MALADI": "BARLEY",
-            "DIL": "2"
+            "FIYAT": 1.3980000000000001,
+            "AY": 8,
+            "YIL": 2020
         },
         {
-            "MAL": "010113",
-            "MALADI": "WEISSER BROTWEIZEN NIEDRIGER QUALITÄT (1660)",
-            "DIL": "4"
+            "MAL": "010301",
+            "FIYAT": 1.418,
+            "AY": 9,
+            "YIL": 2020
         },
         {
-            "MAL": "050109",
-            "MALADI": "CANOLA",
-            "DIL": "2"
+            "MAL": "010301",
+            "FIYAT": 1.58,
+            "AY": 10,
+            "YIL": 2020
         },
         {
-            "MAL": "010311",
-            "MALADI": "SINIF DIŞI ARPA",
-            "DIL": "1"
+            "MAL": "010301",
+            "FIYAT": 1.799,
+            "AY": 11,
+            "YIL": 2020
         },
         {
-            "MAL": "010112",
-            "MALADI": "КРАСНАЯ ПШЕНИЦА ПРОЧАЯ (1370) ",
-            "DIL": "3"
-        },
-        {
-            "MAL": "010110",
-            "MALADI": " Roter Hartweizen",
-            "DIL": "4"
-        },
-        {
-            "MAL": "010311",
-            "MALADI": "НЕ СОРТОВОЙ ЯЧМЕНЬ",
-            "DIL": "3"
-        },
-        {
-            "MAL": "010114",
-            "MALADI": "DÜŞÜK VASIFLI KIRMIZI EKMEKLİK BUĞDAY (1670)",
-            "DIL": "1"
-        },
-        {
-            "MAL": "010303",
-            "MALADI": "OAT",
-            "DIL": "2"
-        },
-        {
-            "MAL": "010111",
-            "MALADI": "OTHER WHITE WHEAT (1360)",
-            "DIL": "2"
-        },
-        {
-            "MAL": "010110",
-            "MALADI": "RED BUCKWHEAT (1270)",
-            "DIL": "2"
-        },
-        {
-            "MAL": "010303",
-            "MALADI": "ОВЁС",
-            "DIL": "3"
-        },
-        {
-            "MAL": "010113",
-            "MALADI": "ПШЕНИЦА ОБЫКНОВЕННАЯ БЕЛАЯ НИЗКОГО КАЧЕСТВА (1660)",
-            "DIL": "3"
-        },
-        {
-            "MAL": "010111",
-            "MALADI": "DİĞER BEYAZ BUĞDAY (1360)",
-            "DIL": "1"
-        },
-        {
-            "MAL": "010311",
-            "MALADI": "NICHT KLASSIFIZIERTER GERSTE",
-            "DIL": "4"
-        },
-        {
-            "MAL": "010112",
-            "MALADI": "SONSTIGER ROTER WEIZEN (1370)",
-            "DIL": "4"
-        },
-        {
-            "MAL": "050109",
-            "MALADI": "RAPS",
-            "DIL": "4"
-        },
-        {
-            "MAL": "010303",
-            "MALADI": "YULAF",
-            "DIL": "1"
-        },
-        {
-            "MAL": "010302",
-            "MALADI": "КУКУРУЗА",
-            "DIL": "3"
-        },
-        {
-            "MAL": "050101",
-            "MALADI": "ПОДСОЛНЕЧНИК",
-            "DIL": "3"
-        },
-        {
-            "MAL": "010109",
-            "MALADI": "Weißer Hartweizen",
-            "DIL": "4"
+            "MAL": "010301",
+            "FIYAT": 1.702,
+            "AY": 12,
+            "YIL": 2020
         }
     ],
-    "totalRecords": 52,
+    "totalRecords": 9,
     "totalAmount": 0
 }

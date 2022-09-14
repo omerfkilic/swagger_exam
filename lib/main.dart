@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:swagger_exam/pages/home_page/helper/sales_graphic.dart';
 import 'package:swagger_exam/pages/home_page/screen/home_page.dart';
 import 'package:swagger_exam/pages/login_page/screen/login_page.dart';
 import 'package:swagger_exam/core/helper/shared_pref.dart' as shared_pref;
@@ -20,9 +21,9 @@ class MyApp extends StatelessWidget {
         theme: ThemeData.dark(),
         title: 'Material App',
         routes: {
-          '/': (context) => FirstPage(),
+          '/': (context) => const FirstPage(),
           '/LoginPage': (context) => LoginPage(),
-          '/HomePage': (context) => const HomePage(),
+          '/HomePage': (context) => HomePage(),
         },
         initialRoute: shared_pref.sharedPref.containsKey('token')
             ? '/HomePage'

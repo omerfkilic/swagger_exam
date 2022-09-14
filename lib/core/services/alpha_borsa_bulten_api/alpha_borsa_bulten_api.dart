@@ -46,15 +46,16 @@ Future<String> comboBoxAPI() async {
   return response.body;
 }
 
-Future<String> grafikAPI({required String malKodu, required String yil}) async {
+Future<String> graphicAPI(
+    {required String malKodu, required String yil}) async {
   final header = {
     "Accept": "/",
     "Authorization": "Bearer ${shared_pref.sharedPref.get('token')}"
   };
   final body = '';
 
-  const url =
-      "https://api.alpatateknoloji.com/api/v1/Alpha.Borsa.Bulten/Genel/GetSatisVerileriYilGrafik?malKodu=050109&yil=2021";
+  var url =
+      "https://api.alpatateknoloji.com/api/v1/Alpha.Borsa.Bulten/Genel/GetSatisVerileriYilGrafik?malKodu=$malKodu&yil=2020";
 
   final uri = Uri.parse(url);
 

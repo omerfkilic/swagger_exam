@@ -4,6 +4,8 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:swagger_exam/models/combo_box_model.dart';
+import 'package:swagger_exam/models/graphic_model.dart';
+import 'package:swagger_exam/pages/home_page/helper/months.dart';
 
 import '../../../core/services/alpha_borsa_bulten_api/alpha_borsa_bulten_api.dart';
 import '../../../models/kayan_yazi_model.dart';
@@ -15,8 +17,10 @@ class HomePageViewModel {
   HomePageViewModel._init();
   late KayanYaziModel? kayanYazi;
   late ComboBoxModel? comboBox;
-  //late List<DropdownMenuItem<ComboBoxDatum>> comboBoxTrDropDownList = [];
-  //late ComboBoxDatum comboBoxDropDownSelectedItem;
+  late GraphicModel? graphic;
+  late ComboBoxDatum? dropDownValue;
+
+  late Map<String, double>? SalesDatas;
 
   Future<KayanYaziModel> getKayanYaziData() async {
     var temp = await kayanYaziAPI();
@@ -26,27 +30,29 @@ class HomePageViewModel {
   }
 
   Future<ComboBoxModel> getComboBoxData() async {
-    print('get Combo BOx');
+    print('get combo box');
     String temp = await comboBoxAPI();
 
     print('combo box done');
     comboBox = comboBoxModelFromJson(temp);
-    //prepereComboBoxData();
     return comboBox!;
   }
 
-  // void prepereComboBoxData() {
-  //   for (var i = 0; i < comboBox!.data!.length; i++) {
-  //     if (comboBox!.data![i].dil == '1') {
-  //       comboBoxTrDropDownList.add(
-  //         DropdownMenuItem(
-  //           child: Text(comboBox!.data![i].maladi.toString()),
-  //           value: comboBox!.data![i],
-  //         ),
-  //       );
-  //     }
-  //   }
-  //   comboBoxDropDownSelectedItem = comboBoxTrDropDownList.first.value!;
-  //   print(comboBoxTrDropDownList[1].value);
-  // }
+  Future getGraphicData() async {
+    String temp = await graphicAPI(malKodu: dropDownValue!.mal!, yil: 'yil');
+    graphic = graphicModelFromJson(temp);
+    prepareSalesData();
+  }
+
+  void prepareSalesData() {
+    SalesDatas = {};
+    List<GraphicDatum> tempList = graphic!.data!;
+    for (var element in tempList) {
+      SalesDatas!.addAll({
+        mounts[element.ay].toString():
+            double.parse(element.fiyat!.toStringAsFixed(2))
+      });
+    }
+    print('Sales Datas ' + SalesDatas.toString());
+  }
 }
