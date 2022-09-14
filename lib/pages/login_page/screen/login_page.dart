@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:swagger_exam/core/services/alpha_auth_api/alpha_auth_api.dart'
     as alphaAuthApi;
+import 'package:swagger_exam/pages/home_page/view_model/home_page_view_model.dart';
+
+import '../../../core/services/alpha_borsa_bulten_api/alpha_borsa_bulten_api.dart';
 
 class LoginPage extends StatelessWidget {
   LoginPage({Key? key}) : super(key: key);
@@ -16,6 +19,7 @@ class LoginPage extends StatelessWidget {
           children: [
             TextFormField(
               style: const TextStyle(
+                  color: Colors.black,
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
                   fontFamily: "Montserrat"),
@@ -39,6 +43,7 @@ class LoginPage extends StatelessWidget {
             const SizedBox(height: 20),
             TextFormField(
               style: const TextStyle(
+                  color: Colors.black,
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
                   fontFamily: "Montserrat"),
