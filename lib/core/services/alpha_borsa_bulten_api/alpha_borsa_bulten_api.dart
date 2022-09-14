@@ -37,7 +37,6 @@ Future<String> comboBoxAPI() async {
       "http://api.alpatateknoloji.com/api/v1/Alpha.Borsa.Bulten/Genel/GetUrunlerSelect";
 
   final uri = Uri.parse(url);
-
   final response = await http.post(uri,
       body: jsonEncode(body),
       headers: header,

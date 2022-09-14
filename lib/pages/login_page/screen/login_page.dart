@@ -12,6 +12,7 @@ class LoginPage extends StatelessWidget {
   final TextEditingController passwordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
+    print('Login Page build');
     return Scaffold(
       body: Center(
         child: Column(

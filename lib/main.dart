@@ -16,16 +16,25 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(),
-      title: 'Material App',
-      routes: {
-        '/HomePage': (context) => HomePage(),
-        '/LoginPage': (context) => LoginPage(),
-      },
-      home: shared_pref.sharedPref.containsKey('token')
-          ? HomePage()
-          : LoginPage(),
-    );
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData.dark(),
+        title: 'Material App',
+        routes: {
+          '/': (context) => FirstPage(),
+          '/LoginPage': (context) => LoginPage(),
+          '/HomePage': (context) => const HomePage(),
+        },
+        initialRoute: shared_pref.sharedPref.containsKey('token')
+            ? '/HomePage'
+            : '/LoginPage');
+  }
+}
+
+class FirstPage extends StatelessWidget {
+  const FirstPage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }

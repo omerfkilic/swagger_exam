@@ -17,12 +17,13 @@ class KayanYaziModel {
     @required this.totalAmount,
   });
 
-  List<Datum>? data;
+  List<KayanYaziDatum>? data;
   int? totalRecords;
   int? totalAmount;
 
   factory KayanYaziModel.fromJson(Map<String, dynamic> json) => KayanYaziModel(
-        data: List<Datum>.from(json["data"].map((x) => Datum.fromJson(x))),
+        data: List<KayanYaziDatum>.from(
+            json["data"].map((x) => KayanYaziDatum.fromJson(x))),
         totalRecords: json["totalRecords"],
         totalAmount: json["totalAmount"],
       );
@@ -34,8 +35,8 @@ class KayanYaziModel {
       };
 }
 
-class Datum {
-  Datum({
+class KayanYaziDatum {
+  KayanYaziDatum({
     @required this.fTarih,
     @required this.tarih,
     @required this.mal,
@@ -83,7 +84,7 @@ class Datum {
   bool? aktif;
   bool? onaylandi;
 
-  factory Datum.fromJson(Map<String, dynamic> json) => Datum(
+  factory KayanYaziDatum.fromJson(Map<String, dynamic> json) => KayanYaziDatum(
         fTarih: json["FTarih"],
         tarih: DateTime.parse(json["TARIH"]),
         mal: json["MAL"],
