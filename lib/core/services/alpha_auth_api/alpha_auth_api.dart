@@ -25,12 +25,12 @@ Future<void> login({required String userId, required String password}) async {
       encoding: Encoding.getByName("utf-8"));
   Map map = json.decode(response.body);
   print(map['token']);
-  shared_pref.sharedPref.setString('authToken', map['token']!);
+  await shared_pref.sharedPref.setString('authToken', map['token']!);
 
   //TODO response'da hata olup olmadığını inceleyen if else yapısı kur
 
   print('Login body : ' + response.body);
-  _getAuthToken();
+  await _getAuthToken();
 }
 
 Future<void> logout() async {
@@ -44,7 +44,7 @@ Future<String> _generateRequestId() async {
   return requestId;
 }
 
-void _getAuthToken() async {
+Future _getAuthToken() async {
   final authTokenBody = {
     "requestId": shared_pref.sharedPref.get('requestId'),
     "authToken": shared_pref.sharedPref.get('authToken'),
@@ -60,5 +60,5 @@ void _getAuthToken() async {
 
   Map map = json.decode(response.body);
   print(map['token']);
-  shared_pref.sharedPref.setString('token', map['token']!);
+  await shared_pref.sharedPref.setString('token', map['token']!);
 }

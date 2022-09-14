@@ -71,12 +71,11 @@ class LoginPage extends StatelessWidget {
               child: ElevatedButton(
                 child: const Text('Giriş Yap'),
                 onPressed: () async {
-                  alphaAuthApi
-                      .login(userId: 'userId', password: 'password')
-                      .then((value) {
-                    Navigator.pushNamedAndRemoveUntil(
-                        context, '/HomePage', (route) => false);
-                  });
+                  await alphaAuthApi.login(
+                      userId: 'userId', password: 'password');
+                  Navigator.pushNamedAndRemoveUntil(
+                      context, '/HomePage', (route) => false);
+                  ;
                 },
               ),
             )
