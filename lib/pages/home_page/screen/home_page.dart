@@ -1,6 +1,10 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
-import '../../core/services/alpha_auth_api/alpha_auth_api.dart';
-import '../../core/services/alpha_borsa_bulten_api/alpha_borsa_bulten_api.dart';
+import 'package:swagger_exam/models/kayan_yazi_model.dart';
+import 'package:swagger_exam/pages/home_page/view_model/home_page_view_model.dart';
+import '../../../core/services/alpha_auth_api/alpha_auth_api.dart';
+import '../../../core/services/alpha_borsa_bulten_api/alpha_borsa_bulten_api.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -13,8 +17,8 @@ class _HomePageState extends State<HomePage> {
   String data = '';
   @override
   void initState() {
+    //kayanYaziAPI().then((value) => data = value);
     super.initState();
-    kayanYazi().then((value) => data = value);
   }
 
   @override
@@ -37,11 +41,12 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         children: [
           ElevatedButton(
-            child: Text('get data'),
+            child: Text('Get Data'),
             onPressed: () async {
-              var temp = await kayanYazi();
+              await HomePageViewModel.instance.getKayanYaziData();
               setState(() {
-                data = temp;
+                data =
+                    HomePageViewModel.instance.kayanYazi!.toJson().toString();
               });
             },
           ),

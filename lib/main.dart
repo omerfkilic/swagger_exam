@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:swagger_exam/pages/home_page/home_page.dart';
-import 'package:swagger_exam/pages/login_page/login_page.dart';
+import 'package:swagger_exam/pages/home_page/screen/home_page.dart';
+import 'package:swagger_exam/pages/login_page/screen/login_page.dart';
 import 'package:swagger_exam/core/helper/shared_pref.dart' as shared_pref;
 
 void main() async {

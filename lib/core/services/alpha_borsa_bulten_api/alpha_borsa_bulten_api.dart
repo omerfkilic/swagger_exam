@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:swagger_exam/core/helper/shared_pref.dart' as shared_pref;
 
-Future<String> kayanYazi() async {
+Future<String> kayanYaziAPI() async {
   final header = {
     "Accept": "text/plain",
     "Content-Type": "application/json",
